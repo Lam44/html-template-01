@@ -5,9 +5,8 @@
 
 .main{
     width: 100%;
-    height: 120vh;
+    height: 580px;
     background-image:  url(../night.jpg);
-
     background-position: center;
     background-size: cover;
     position: relative;  
@@ -305,6 +304,7 @@ h1{
     margin-bottom: 5%;
     padding: 20px 12px;
     box-sizing: border-box;
+    transition: .3s;
 }
 
 .h3{
@@ -335,18 +335,189 @@ h1{
 
 .campus-col img{
     width: 100%;
+    display: block;
 }
 
 .layer{
-    background: rgba(226,0,0,0.7);
     height: 100%;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
+    transition: .4s;
+}
+
+.layer:hover{
+    background-color: #e67e22;
+    opacity: 0.6;
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #ffff;
+    font-size: 19px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.facilities-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.facilities-col p{
+    padding: 0;
+}
+
+.facilities-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.testimonials{
+    width: 80%;
+    margin: auto;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.testimonials-col{
+    width: 80%;
+    background: #ff9138;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: left;
+    margin-right: 15px;
+    
+}
+
+.testimonials-col img{
+    height: 40px;
+    margin-right: 30px;
+    border-radius: 50%;  
+}
+
+.testimonials-col p{
+    margin-left: 65px;
+    margin-top: -45px;
+}
+
+.testimonials-col h3{
+    margin-left: 67px;
+    padding-top: 5px;
+}
+
+.testimonials-col .str{
+    margin-left: 66px;
+    margin-top: 10px;
+}
+
+.testimonials-col .fa-solid{
+    color: #ffd455;
 }
 
 
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: url(../img2.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+    
+}
+
+.cta h1{
+    margin-bottom: 40px;
+    padding: 0;
+    color: #ffff;
+}
+
+.cta button{
+    width: 140px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #fff3f3;
+    background: transparent;
+    transition: .4s;
+      
+}
+
+.cta button a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.cta button:hover{
+    font-weight: 500;
+    color: #ffffff;
+    background: #ec0202;
+    
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.footer-icons .fa-brands a{
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+
+.footer-icons .fa-brands{
+    color: #000000;
+    font-size: 30px;
+    padding-left: 20px;
+    padding-top: 19px;
+    transition: .3s;
+}
+
+
+.footer-icons .fa-brands:hover{
+    color: #ff7200;
+}
 
 
 
